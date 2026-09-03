@@ -1,0 +1,14 @@
+name = "mas-vote-proxy"
+main = "js/vote-proxy.js"
+compatibility_date = "2026-01-01"
+
+# EDIT: replace with your real zone/domain once it's on Cloudflare.
+[[routes]]
+pattern = "makacturialsociety.org/vote*"
+zone_name = "makacturialsociety.org"
+
+# EDIT: set this to wherever the Django app actually lives — e.g. an
+# Elastic Beanstalk domain, an ALB DNS name, or a custom AWS subdomain.
+# No trailing slash.
+[vars]
+VOTE_ORIGIN = "https://your-aws-backend.example.com"

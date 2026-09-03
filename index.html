@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Makerere Actuarial Society</title>
+  <meta name="description" content="The Makerere Actuarial Society supports students building careers in actuarial science through exam prep, mentorship, and a direct line to the profession.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">
+          <img src="./assets/mas_logo.jpg" alt="Makerere Actuarial Society logo" height="48" width="48">
+        </span>
+        <span class="brand-word">Makerere Actuarial Society<small>School of Statistics &amp; Planning</small></span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./leadership.html">Leadership</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="shell hero-grid">
+        <p class="hero-eyebrow">Makerere University<br>School of Statistics &amp; Planning</p>
+        <div class="hero-copy">
+          <h1>Making sense of risk, together.</h1>
+          <p>The home for Makerere's actuarial science students &mdash; where risk, probability, and finance stop being lecture material and start being a craft you practice with peers.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./about.html">About the society</a>
+            <a class="btn btn-secondary" href="./activities.html">See what we do</a>
+          </div>
+        </div>
+      </div>
+      <div class="shell">
+        <!-- Decorative survival-curve graphic: a nod to the mortality/decrement
+             curves actuaries work with daily. Purely illustrative. -->
+        <svg class="hero-curve" viewBox="0 0 960 200" preserveAspectRatio="none" role="img" aria-label="Illustrative declining curve">
+          <line x1="0" y1="180" x2="960" y2="180" stroke="#aebfa8" stroke-width="1"/>
+          <path class="line" d="M0,20 C160,20 180,150 340,160 C520,172 560,60 720,50 C820,44 880,110 960,120" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="stats rule-top">
+      <!-- EDIT: replace with real figures -->
+      <div class="stat"><span class="n tabular">120+</span><span class="label">Active members</span></div>
+      <div class="stat"><span class="n tabular">20XX</span><span class="label">Founded</span></div>
+      <div class="stat"><span class="n tabular">6</span><span class="label">Study groups a year</span></div>
+      <div class="stat"><span class="n tabular">10+</span><span class="label">Speaker sessions a year</span></div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">What we do</p>
+          <h2>Four ways we back you through the actuarial track</h2>
+        </div>
+        <div class="ledger">
+          <div class="ledger-row">
+            <p class="row-label">Exam prep</p>
+            <div>
+              <h3>Study groups &amp; past-paper sessions</h3>
+              <p>Weekly sessions built around the papers members are actually sitting, run by students a year or two ahead.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Industry access</p>
+            <div>
+              <h3>Talks, site visits &amp; Q&amp;As</h3>
+              <p>Practising actuaries and analysts come talk through what the work is really like, and what got them there.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Mentorship</p>
+            <div>
+              <h3>Guidance from students ahead of you</h3>
+              <p>Pairing with senior members for course choices, internship applications, and exam strategy.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Community</p>
+            <div>
+              <h3>A cohort that's doing this with you</h3>
+              <p>Socials, competitions, and a WhatsApp community so the actuarial track doesn't feel like a solo one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Get involved</p>
+          <h2>Start with whichever door makes sense</h2>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./activities.html">Browse activities</a>
+          <a class="btn btn-secondary" href="./leadership.html">Meet the leadership</a>
+          <a class="btn btn-secondary" href="./contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+      <ul class="footer-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

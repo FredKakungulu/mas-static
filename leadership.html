@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Leadership &mdash; Makerere Actuarial Society</title>
+  <meta name="description" content="The current MAS executive committee, and how leadership elections work.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">
+          <img src="./assets/mas_logo.jpg" alt="Makerere Actuarial Society logo" height="48" width="48">
+        </span>
+        <span class="brand-word">Makerere Actuarial Society<small>School of Statistics &amp; Planning</small></span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="./">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./leadership.html" aria-current="page">Leadership</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--compact">
+      <div class="shell hero-grid">
+        <p class="hero-eyebrow">Leadership</p>
+        <div class="hero-copy">
+          <h1>The committee running this term</h1>
+          <p>An executive committee elected by the membership, serving a one-year term. Below: who's currently in the roles, and how the next election works.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Current committee</p>
+          <h2>2025/26 executive</h2>
+        </div>
+        <!-- EDIT: replace names, roles, and blurbs with the real committee.
+             Duplicate a .person block for each additional member. -->
+        <div class="people-grid">
+          <div class="person">
+            <div class="avatar" aria-hidden="true">PN</div>
+            <h3>President's Name</h3>
+            <p class="role">President</p>
+            <p>One line on focus or background.</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">VP</div>
+            <h3>Vice President's Name</h3>
+            <p class="role">Vice President</p>
+            <p>One line on focus or background.</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">GS</div>
+            <h3>General Secretary's Name</h3>
+            <p class="role">General Secretary</p>
+            <p>One line on focus or background.</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">TR</div>
+            <h3>Treasurer's Name</h3>
+            <p class="role">Treasurer</p>
+            <p>One line on focus or background.</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">AC</div>
+            <h3>Academics Lead's Name</h3>
+            <p class="role">Head of Academics</p>
+            <p>One line on focus or background.</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">PR</div>
+            <h3>Publicity Lead's Name</h3>
+            <p class="role">Head of Publicity</p>
+            <p>One line on focus or background.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Elections</p>
+          <h2>How the next committee gets chosen</h2>
+        </div>
+
+        <div class="election-panel">
+          <p class="hero-eyebrow election-label">Voting</p>
+          <div>
+            <p>Elections are held once a year and open to all paid-up members. When polls are open, voting happens on our dedicated voting site &mdash; the button below will take you there.</p>
+
+            <!-- Shown when ELECTIONS.open is false in js/main.js -->
+            <p class="vote-closed" data-vote-closed hidden>
+              Polls aren't open right now. <!-- EDIT: add next expected date if known. --> Check back here or watch our channels for the announcement.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/vote/" data-vote-cta hidden>Cast your vote</a>
+            </div>
+
+            <!-- Shown by js/main.js if the health check fails -->
+            <div class="notice" data-vote-error hidden role="alert">
+              <strong>Voting site unavailable.</strong> We couldn't reach it just now &mdash; this is usually temporary. Please try again in a few minutes, or <a href="./contact.html">contact us</a> if it persists.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+      <ul class="footer-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

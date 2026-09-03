@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact &mdash; Makerere Actuarial Society</title>
+  <meta name="description" content="Get in touch with the Makerere Actuarial Society.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">
+          <img src="./assets/mas_logo.jpg" alt="Makerere Actuarial Society logo" width="48" height="48">
+        </span>
+        <span class="brand-word">Makerere Actuarial Society<small>School of Statistics &amp; Planning</small></span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="./">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./leadership.html">Leadership</a></li>
+        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--compact">
+      <div class="shell hero-grid">
+        <p class="hero-eyebrow">Contact</p>
+        <div class="hero-copy">
+          <h1>Questions, ideas, or want to join in?</h1>
+          <p>Whichever of those it is, this is the fastest way to reach the committee.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="ledger">
+          <div class="ledger-row">
+            <p class="row-label">Email</p>
+            <div>
+              <h3><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></h3>
+              <p>General enquiries and membership questions.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Phone</p>
+            <div>
+              <h3><a href="tel:+256766846964">+256 766 846 964</a></h3>
+              <p>For calls and WhatsApp.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Location</p>
+            <div>
+              <h3>School of Statistics and Planning</h3>
+              <p>Makerere University, Kampala, Uganda <!-- EDIT: add building/room if you want to be found in person --></p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Online</p>
+            <div>
+              <h3>Social &amp; community</h3>
+              <p><a href="https://www.linkedin.com/company/makerere_mas/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; <a href="https://www.facebook.com/MakerereActuarialSocietymas" target="_blank" rel="noopener noreferrer">Facebook</a> &middot; <a href="https://x.com/MakActuarialSoc" target="_blank" rel="noopener noreferrer">X</a> &middot; <a href="https://www.instagram.com/makerereactuarialsociety/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Message us</p>
+          <h2>Send a note directly</h2>
+        </div>
+
+        <!--
+          EDIT: this form has no backend of its own — it's a static site.
+          Point the action at a form-handling service (Formspree, Getform,
+          etc.) and it will email submissions straight to your inbox with no
+          server needed. Until then this form won't actually send anywhere.
+        -->
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+      <ul class="footer-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./leadership.html">Leadership</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

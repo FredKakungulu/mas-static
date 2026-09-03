@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About &mdash; Makerere Actuarial Society</title>
+  <meta name="description" content="What the Makerere Actuarial Society is, who it's for, and how it's run.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">
+          <img src="./assets/mas_logo.jpg" alt="Makerere Actuarial Society logo" width="48" height="48">
+        </span>
+        <span class="brand-word">Makerere Actuarial Society<small>School of Statistics &amp; Planning</small></span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="./">Home</a></li>
+        <li><a href="./about.html" aria-current="page">About</a></li>
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./leadership.html">Leadership</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--compact">
+      <div class="shell hero-grid">
+        <p class="hero-eyebrow">About</p>
+        <div class="hero-copy">
+          <h1>A society built around one question: how do you turn uncertainty into a number?</h1>
+          <p>MAS exists so that students drawn to that question don't have to work it out alone &mdash; from first encountering probability and statistics, through to sitting professional actuarial exams and landing the first job. We're the student body for actuarial science at Makerere University, built on peer learning, industry connections, and a community founded on Ubuntu &mdash; the belief that we rise by helping each other rise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Mission</p>
+          <h2>What we're here to do</h2>
+        </div>
+        <div class="ledger">
+          <div class="ledger-row">
+            <p class="row-label">01</p>
+            <div>
+              <h3>Make the actuarial path legible</h3>
+              <p>Most students arrive at Makerere without a clear map of what "becoming an actuary" actually involves &mdash; which exams, which bodies, which employers. We put that map in front of them early.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">02</p>
+            <div>
+              <h3>Keep exam prep collective, not solitary</h3>
+              <p>Professional actuarial exams are hard on their own terms. Study groups, past papers, and peer mentorship make them a shared project instead.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">03</p>
+            <div>
+              <h3>Connect students to the working profession</h3>
+              <p>Through talks, visits, and introductions, members meet actuaries and analysts already doing the work &mdash; not just the theory behind it.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">04</p>
+            <div>
+              <h3>Get ahead of a growing industry</h3>
+              <p>Uganda's insurance and pensions sectors are overseen by the Insurance Regulatory Authority of Uganda (IRA) and the Uganda Retirement Benefits Regulatory Authority (URBRA) &mdash; both increasingly reliant on actuarial expertise as the industry grows. MAS exists to connect students to that pipeline early, long before graduation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Who it's for</p>
+          <h2>Open to anyone serious about the track</h2>
+        </div>
+        <p class="prose-narrow">Membership is open to Makerere students studying statistics, actuarial science, mathematics, or a related field &mdash; at any year of study. You don't need to have started professional exams to join; many members join precisely to figure out whether this is the right direction. <!-- EDIT: confirm/adjust eligibility wording and add a join link or process if there is one. --></p>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">Structure</p>
+          <h2>Run by students, for students</h2>
+        </div>
+        <p class="prose-narrow">MAS is a student-run body within the School of Statistics and Planning. An elected executive committee sets the term's programme and represents the society to the department and to partners &mdash; see the <a href="./leadership.html">current leadership</a> and how elections work.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+      <ul class="footer-links">
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

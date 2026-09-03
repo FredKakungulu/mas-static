@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Activities &mdash; Makerere Actuarial Society</title>
+  <meta name="description" content="Study groups, speaker sessions, industry visits, and the rest of what MAS runs through the year.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">
+          <img src="./assets/mas_logo.jpg" alt="Makerere Actuarial Society logo" width="48" height="48">
+        </span>
+        <span class="brand-word">Makerere Actuarial Society<small>School of Statistics &amp; Planning</small></span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav" data-nav-links>
+        <li><a href="./">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./activities.html" aria-current="page">Activities</a></li>
+        <li><a href="./leadership.html">Leadership</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--compact">
+      <div class="shell hero-grid">
+        <p class="hero-eyebrow">Activities</p>
+        <div class="hero-copy">
+          <h1>What running through the term looks like</h1>
+          <p>A mix of recurring sessions and one-off events, aimed at both exam progress and exposure to the profession.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="ledger">
+          <div class="ledger-row">
+            <p class="row-label">Ongoing</p>
+            <div>
+              <h3>Tutorials and revision</h3>
+              <p>Peer-led study groups and exam-focused workshops.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Termly</p>
+            <div>
+              <h3>Professional talks</h3>
+              <p>Guest sessions on insurance, pensions, data, and exam pathways.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Annual</p>
+            <div>
+              <h3>Annual actuarial dinner</h3>
+              <p>A flagship evening with members, alumni, and industry partners.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label">Ongoing</p>
+            <div>
+              <h3>Community outreach</h3>
+              <p>Service and financial-literacy activities beyond campus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule-top">
+      <div class="shell">
+        <div class="section-head">
+          <p class="row-label">This term</p>
+          <h2>Upcoming</h2>
+        </div>
+        <!-- EDIT: replace the rows below with real dates as they're scheduled.
+             Keep the table structure — just swap the placeholder text. -->
+        <div class="ledger">
+          <div class="ledger-row">
+            <p class="row-label tabular">DD Mon</p>
+            <div>
+              <h3>Session name</h3>
+              <p>Short description and location.</p>
+            </div>
+          </div>
+          <div class="ledger-row">
+            <p class="row-label tabular">DD Mon</p>
+            <div>
+              <h3>Session name</h3>
+              <p>Short description and location.</p>
+            </div>
+          </div>
+        </div>
+        <p class="schedule-note">For the full schedule or to suggest a session, <a href="./contact.html">get in touch</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+      <ul class="footer-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
