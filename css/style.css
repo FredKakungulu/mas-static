@@ -442,8 +442,6 @@ a:not(.btn):hover { color: var(--gold-dim); }
   .election-panel { grid-template-columns: 1fr; }
 }
 
-[data-vote-cta][hidden] { display: none; }
-
 .notice {
   border-left: 3px solid var(--garnet);
   background: var(--white);
