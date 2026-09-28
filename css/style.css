@@ -550,6 +550,57 @@ a:not(.btn):not(.brand):not(.skip-link):hover {
   }
 }
 
+/* Phones (portrait) and short viewports (landscape): top-align, no empty navy band */
+@media (max-width: 760px), (max-height: 520px) {
+  .hero-home {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .hero-home .shell {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-brand {
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-home h1 {
+    margin-bottom: 0.55rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.25rem;
+  }
+
+  .hero-plane {
+    height: min(28vh, 180px);
+  }
+}
+
+@media (max-height: 520px) {
+  .hero-home .shell {
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .hero-plane {
+    height: min(22vh, 120px);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-home .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-home .hero-actions .btn {
+    width: 100%;
+  }
+}
+
 /* ---------- page intro (inner pages) ---------- */
 
 .page-intro {
