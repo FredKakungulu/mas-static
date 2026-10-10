@@ -1,6 +1,67 @@
 /* ==========================================================================
    Makerere Actuarial Society — shared site behaviour
+   Apex (makacturialsociety.org) = this static site;
+   vote.makactuarialsociety.org = MAS-OVS booth.
    ========================================================================== */
+
+const SITE = {
+  votingBoothUrl: 'https://vote.makactuarialsociety.org/vote/',
+  receiptLookupUrl: 'https://vote.makactuarialsociety.org/vote/receipt/',
+  social: {
+    linkedin: 'https://www.linkedin.com/company/makerere_mas/',
+    facebook: 'https://www.facebook.com/MakerereActuarialSocietymas',
+    x: 'https://x.com/MakActuarialSoc',
+    instagram: 'https://www.instagram.com/makerereactuarialsociety/',
+    whatsapp: 'https://wa.me/256766846964',
+  },
+};
+
+const SOCIAL_LABELS = {
+  linkedin: 'LinkedIn',
+  facebook: 'Facebook',
+  x: 'X (Twitter)',
+  instagram: 'Instagram',
+  whatsapp: 'WhatsApp',
+};
+
+function applyExternalSiteLink(selector, url) {
+  document.querySelectorAll(selector).forEach((el) => {
+    if (el.tagName !== 'A') return;
+    el.setAttribute('href', url);
+    if (url && url !== '#') {
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+}
+
+function applyVotingBoothLinks() {
+  applyExternalSiteLink('[data-voting-booth]', SITE.votingBoothUrl);
+}
+
+function applyReceiptLookupLinks() {
+  applyExternalSiteLink('[data-receipt-lookup]', SITE.receiptLookupUrl);
+}
+
+function applySocialLinks() {
+  document.querySelectorAll('[data-social]').forEach((el) => {
+    const key = el.getAttribute('data-social');
+    const url = SITE.social[key];
+    if (!url || el.tagName !== 'A') return;
+
+    el.setAttribute('href', url);
+    el.setAttribute('aria-label', SOCIAL_LABELS[key] || key);
+
+    if (url !== '#') {
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      el.addEventListener('click', (event) => {
+        event.preventDefault();
+      });
+    }
+  });
+}
 
 function initYear() {
   const el = document.getElementById('year');
@@ -46,6 +107,30 @@ function initNavToggle() {
     if (links.contains(target) || toggle.contains(target)) return;
     setOpen(false);
   });
+}
+
+function initReveal() {
+  const items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach((item) => item.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16, rootMargin: '0px 0px -8% 0px' }
+  );
+
+  items.forEach((item) => observer.observe(item));
 }
 
 function initContactForm() {
@@ -96,8 +181,12 @@ function initContactForm() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  applyVotingBoothLinks();
+  applyReceiptLookupLinks();
+  applySocialLinks();
   initYear();
   initHeaderState();
   initNavToggle();
+  initReveal();
   initContactForm();
 });

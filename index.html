@@ -64,22 +64,15 @@
 
   <main id="main">
 
-    <section class="hero-home" aria-label="Introduction">
+    <section class="page-intro" aria-label="Introduction">
       <div class="shell">
-        <p class="hero-brand reveal">Makerere Actuarial Society<span>School of Statistics &amp; Planning</span></p>
+        <p class="kicker reveal">Makerere Actuarial Society</p>
         <h1 class="reveal reveal-delay-1">Making sense of risk, together.</h1>
         <p class="lede reveal reveal-delay-2">Where Makerere's actuarial students turn probability and finance from lecture material into a craft practised with peers.</p>
         <div class="hero-actions reveal reveal-delay-2">
           <a class="btn btn-primary" href="./about.html">About the society</a>
           <a class="btn btn-secondary" href="./contact.html">Get in touch</a>
         </div>
-      </div>
-      <div class="hero-plane" aria-hidden="true">
-        <svg viewBox="0 0 1440 420" preserveAspectRatio="none" focusable="false">
-          <line class="horizon-line" x1="0" y1="310" x2="1440" y2="310"/>
-          <path class="curve-soft" d="M0,90 C180,90 220,250 380,270 C560,295 620,140 800,120 C980,100 1080,220 1440,200"/>
-          <path class="curve" d="M0,70 C200,70 240,280 420,300 C620,325 680,110 860,95 C1040,80 1180,230 1440,210"/>
-        </svg>
       </div>
     </section>
 
@@ -145,7 +138,20 @@
       </div>
     </section>
 
-    <section class="section section--tight" style="padding-top: 0;">
+    <section class="band" aria-labelledby="election-ready">
+      <div class="shell">
+        <p class="band-kicker">Elections</p>
+        <h2 id="election-ready">When polls open, you'll know the way</h2>
+        <p class="lede">Leadership elections run on the official MAS voting booth. Registered members sign in with student number and email, receive a one-time code, and cast a secret ballot.</p>
+        <div class="band-actions">
+          <a class="btn btn-primary" href="./leadership.html">How elections work</a>
+          <a class="btn btn-secondary" href="#" data-voting-booth>Enter voting booth</a>
+          <a class="btn btn-secondary" href="#" data-receipt-lookup>Check a receipt</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="shell">
         <div class="section-head">
           <p class="row-label">Get involved</p>
@@ -162,15 +168,27 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell">
-      <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
-      <ul class="footer-links">
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./activities.html">Activities</a></li>
-        <li><a href="./leadership.html">Leadership</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
-      </ul>
+    <div class="shell footer-inner">
+      <div class="footer-top">
+        <span>&copy; <span id="year"></span> Makerere Actuarial Society</span>
+        <ul class="social-list" aria-label="Social media">
+          <li><a href="#" data-social="linkedin"><img src="./assets/icons/linkedin.svg" alt="" width="20" height="20"></a></li>
+          <li><a href="#" data-social="facebook"><img src="./assets/icons/facebook.svg" alt="" width="20" height="20"></a></li>
+          <li><a href="#" data-social="x"><img src="./assets/icons/x.svg" alt="" width="20" height="20"></a></li>
+          <li><a href="#" data-social="instagram"><img src="./assets/icons/instagram.svg" alt="" width="20" height="20"></a></li>
+          <li><a href="#" data-social="whatsapp"><img src="./assets/icons/whatsapp.svg" alt="" width="20" height="20"></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-links">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./activities.html">Activities</a></li>
+          <li><a href="./leadership.html">Leadership</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="mailto:makerereactuarialsociety2@gmail.com">makerereactuarialsociety2@gmail.com</a></li>
+        </ul>
+        <p class="footer-meta">Official voting: <a href="#" data-voting-booth>vote.makactuarialsociety.org</a></p>
+      </div>
     </div>
   </footer>
 
