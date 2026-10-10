@@ -536,12 +536,21 @@ a:not(.btn):not(.brand):not(.skip-link):hover {
 
 .social-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.55rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .social-list a {
@@ -823,10 +832,15 @@ a:not(.btn):not(.brand):not(.skip-link):hover {
 .footer-top,
 .footer-bottom {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-top .social-list {
+  flex-shrink: 0;
 }
 
 .site-footer a {
@@ -857,6 +871,16 @@ a:not(.btn):not(.brand):not(.skip-link):hover {
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.site-footer .social-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.site-footer .social-list li {
+  list-style: none;
 }
 
 .site-footer .social-list a {
